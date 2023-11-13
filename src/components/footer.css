@@ -1,0 +1,14 @@
+.footer {
+    background-color: blue;
+    color: gold;
+    padding: 20px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: fantasy;
+  }
+  
+  .footer label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

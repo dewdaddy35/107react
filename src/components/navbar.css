@@ -1,0 +1,17 @@
+.navbar {
+    padding: 20px;
+    background-color: blue;
+    font-size: larger;
+    font-weight: bold;
+    color:gold;
+    font-family: fantasy;
+  }
+  
+  .navbar p {
+    margin: 0 10px;
+  }
+  .nav {
+    display: flex;
+    padding: 20px;
+  }
+  
