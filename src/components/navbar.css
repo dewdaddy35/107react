@@ -1,12 +1,13 @@
 .navbar {
-    padding: 20px;
+  height: 200px;
+    padding: 100px;
     background-color: blue;
     font-size: larger;
     font-weight: bold;
     color:gold;
     font-family: fantasy;
-  }
-  
+    background-image: url(/public/logo/Hats.jpg)
+}
   .navbar p {
     margin: 0 10px;
   }
@@ -14,4 +15,6 @@
     display: flex;
     padding: 20px;
   }
-  
+ .container-fluid{
+  color: blue;
+ }

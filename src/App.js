@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import React from 'react';
 import Navbar from './components/navbar';
 import Product from './components/product';
 import Footer from './components/footer';

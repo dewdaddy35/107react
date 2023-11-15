@@ -2,21 +2,21 @@
 let catalog =[
     {
         "title": "Running Shoes",
-        "catagory":"Shoes",
+        "category":"Shoes",
         "price":45.00,
         "image": "blackrunners.jpg",
-        "ProductId": "1",//placeholder
+        "_id": "1",//placeholder
     },
     {
         "title": "Basketball Shoes",
-        "catagory":"Shoes",
+        "category":"Shoes",
         "price":105.00,
         "image": "hightops.jpg",
-        "ProductId": "2",//placeholder
+        "_id": "2",//placeholder
     },
     {
         "title": "Kangol",
-        "catagory":"Hats",
+        "category":"Hats",
         "price":55.00,
         "image": "kangol.jpg",
         "_id": "3",//placeholder
@@ -24,7 +24,7 @@ let catalog =[
     },
     {
         "title": "Ball Caps",
-        "catagory":"Hats",
+        "category":"Hats",
         "price":30.00,
         "image": "three style caps.jpg",
         "_id": "4",//placeholder
@@ -32,7 +32,7 @@ let catalog =[
     },
     {
         "title": "Polo Shirt",
-        "catagory":"Clothing",
+        "category":"Clothing",
         "price":55.00,
         "image": "Polo Shirt.jpg",
         "_id": "5",//placeholder
@@ -40,7 +40,7 @@ let catalog =[
     },
     {
         "title": "Sweat Jacket",
-        "catagory":"Clothing",
+        "category":"Clothing",
         "price":85.00,
         "image": "SweatJacket.jpg",
         "_id": "6",//placeholder
@@ -48,7 +48,7 @@ let catalog =[
     },
     {
         "title": "Jacket",
-        "catagory":"Clothing",
+        "category":"Clothing",
         "price":250.00,
         "image": "Jacket.jpg",
         "_id": "7",//placeholder
@@ -56,7 +56,7 @@ let catalog =[
     },
     {
         "title": "Running Shoes",
-        "catagory":"Shoes",
+        "category":"Shoes",
         "price":75.00,
         "image": "bluerunners.jpg",
         "_id": "8",//placeholder

@@ -17,8 +17,8 @@ function Product (props) {
   },[]);
   return (
     <div className="product">
-        <img src={"/logo/"+props.data.image} ></img>     
-        <h5>{props.data.title}</h5>
+        <img className= "product img" src={"/logo/"+props.data.image} ></img>     
+        <h5 className="product h5">{props.data.title}</h5>
        
         <div className="prices">
         <label className="label">Price: ${props.data.price}</label>
