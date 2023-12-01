@@ -57,7 +57,7 @@ for(let i=0; i<products.length; i++){
     setProdsToDisplay(products);
   }
   return (
-    <div className='catalog'>
+    <div className='catalog page'>
       <h1>Check out our {products.length} new products</h1>
       
       

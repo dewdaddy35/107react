@@ -3,45 +3,42 @@
 /* product.css */
 
 .product {
-    display: inline-block; /* Added to display as inline-block */
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 15px;
-    text-align: center;
-    max-width: 300px;
-    color: #4e4caf;
-  }
-  
-  .product img {
-    
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .product h5 {
-    font-size: x-large;
-    font-weight: bolder;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-  
-  .product button {
-    background-color: #4e4caf;
-    color: #0e0707;
-    border: none;
-    padding:  8px;
-    font-size: 9px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .product button:hover {
-    background-color: #45a049;
-  }
-  .label{
-    display: flex;
-    
-  }
-  
+  display: inline-block; /* Added to display as inline-block */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  max-width: 300px;
+  color: #4e4caf;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product h5 {
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.product button {
+  background-color: #4e4caf;
+  color: #0e0707;
+  border: none;
+  padding: 8px;
+  font-size: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #45a049;
+}
+.label {
+  display: flex;
+}

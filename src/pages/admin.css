@@ -1,0 +1,20 @@
+.admin h2 {
+  color: darkcyan;
+}
+.parent {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: xx-large;
+}
+.products {
+  flex: 3;
+  min-height: 100px;
+}
+.coupons {
+  flex: 1;
+  min-height: 100px;
+}
+.admin section {
+  border: 1px solid;
+  border-radius: 6px;
+}

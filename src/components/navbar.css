@@ -4,9 +4,10 @@
     background-color: blue;
     font-size: larger;
     font-weight: bold;
-    color:gold;
+    color:blue;
     font-family: fantasy;
-    background-image: url(/public/logo/Hats.jpg)
+    background-image: url(/public/logo/Hats.jpg);
+    background-size: cover;
 }
   .navbar p {
     margin: 0 10px;
