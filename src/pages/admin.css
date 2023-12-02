@@ -1,5 +1,6 @@
-.admin h2 {
-  color: darkcyan;
+.admin {
+  color: gold;
+  background-color: black;
 }
 .parent {
   display: flex;
@@ -17,4 +18,8 @@
 .admin section {
   border: 1px solid;
   border-radius: 6px;
+}
+.admin .btn {
+  color: black;
+  background-color: gold;
 }

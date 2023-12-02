@@ -9,7 +9,7 @@
   margin: 15px;
   text-align: center;
   max-width: 300px;
-  color: #4e4caf;
+  color: gold;
 }
 
 .product img {
@@ -27,8 +27,8 @@
 }
 
 .product button {
-  background-color: #4e4caf;
-  color: #0e0707;
+  background-color: gold;
+  color: gold;
   border: none;
   padding: 8px;
   font-size: 9px;

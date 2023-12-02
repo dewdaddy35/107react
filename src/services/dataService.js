@@ -42,7 +42,7 @@ let catalog =[
         "title": "Sweat Jacket",
         "category":"Clothing",
         "price":85.00,
-        "image": "SweatJacket.jpg",
+        "image": "Sweat Jacket.jpg",
         "_id": "6",//placeholder
         
     },

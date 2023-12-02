@@ -45,6 +45,11 @@ function Navbar() {
                 Admin
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/contact">
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

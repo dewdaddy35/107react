@@ -1,0 +1,27 @@
+.contact {
+  background-color: gray;
+}
+.form {
+  background-color: black;
+}
+
+.form .h4 {
+  font-size: xx-large;
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 4px;
+  padding: 10px;
+  color: gold;
+}
+.form-control {
+  background-color: gold;
+}
+.form-label {
+  color: gold;
+  font-size: x-large;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+.btn-btn-primary {
+  font-size: x-large;
+}

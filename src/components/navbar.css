@@ -1,21 +1,21 @@
 .navbar {
-  height: 200px;
-    padding: 100px;
-    background-color: blue;
-    font-size: larger;
-    font-weight: bold;
-    color:blue;
-    font-family: fantasy;
-    background-image: url(/public/logo/Hats.jpg);
-    background-size: cover;
-}
-  .navbar p {
-    margin: 0 10px;
-  }
-  .nav {
-    display: flex;
-    padding: 20px;
-  }
- .container-fluid{
+  height: 400px;
+  padding: 100px;
+  background-color: blue;
+  font-size: larger;
+  font-weight: bold;
   color: blue;
- }
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(/public/logo/jacketnavbar.jpg);
+  background-size: cover;
+}
+.navbar p {
+  margin: 0 40px;
+}
+.nav {
+  display: flex;
+  padding: 20px;
+}
+.container-fluid {
+  color: blue;
+}

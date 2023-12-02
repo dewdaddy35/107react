@@ -1,11 +1,11 @@
-.img{
-    height: 200px;
-    length: 200px;
+.img {
+  height: 200px;
+  length: 200px;
 }
-.catalog{
-    background-color: black;
-    color: blue;
+.catalog {
+  background-color: black;
+  color: gold;
 }
-.btn-filter{
-    margin: 7px;
+.btn-filter {
+  margin: 7px;
 }

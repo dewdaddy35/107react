@@ -1,15 +1,14 @@
 .footer {
-  height: 400px;
+  height: 300px;
+  padding: 100px;
   background-color: blue;
+  font-size: larger;
+  font-weight: bold;
   color: gold;
-  padding: 20px;
-  font-size: xx-large;
-  text-align: center;
-  font-family: fantasy;
-  background-image: url(/public/logo/Background\ navbar.jpg);
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(/public/logo/hatfooter.jpg);
   background-size: cover;
 }
-
 .footer label {
   font-size: 18px;
   font-weight: bold;
