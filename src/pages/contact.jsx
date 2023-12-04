@@ -66,7 +66,7 @@ function Contact() {
       </div>
 
       <div>
-        <button onClick={handleForm} className="btn btn-primary">
+        <button onClick={handleForm} className="btn btn-warning">
           Send message
         </button>
       </div>

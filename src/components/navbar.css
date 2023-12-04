@@ -1,21 +1,33 @@
 .navbar {
-  height: 400px;
-  padding: 100px;
-  background-color: blue;
+  height: 200px;
+  padding: 200px;
+  background-color: white;
   font-size: larger;
   font-weight: bold;
-  color: blue;
   font-family: "Times New Roman", Times, serif;
   background-image: url(/public/logo/jacketnavbar.jpg);
   background-size: cover;
+  border: 2px solid gray;
 }
 .navbar p {
   margin: 0 40px;
 }
 .nav {
   display: flex;
-  padding: 20px;
+  padding: 0px;
 }
 .container-fluid {
-  color: blue;
+  justify-content: space-evenly;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  padding: 20px;
+}
+/* navbar.css */
+.cart-b {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.cart-b button {
+  margin-right: 30px; /* Adjust the margin value as needed */
 }

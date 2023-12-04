@@ -15,6 +15,9 @@ function Product(props) {
   useEffect(function () {
     console.log("hello i am a product");
   }, []);
+  function addToCart() {
+    console.log(props.data.title);
+  }
   return (
     <div className="product">
       <img className="img" src={"/logo/" + props.data.image}></img>
@@ -25,6 +28,11 @@ function Product(props) {
 
         <label className="label">Total: ${total}</label>
       </div>
+
+      <button onClick={addToCart} className="product button">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Add
+      </button>
 
       <QuantityPicker onQuantityChange={handleQuantityChange} />
     </div>

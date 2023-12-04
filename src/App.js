@@ -14,11 +14,14 @@ import About from './pages/about';
 import Home from './pages/home';
 import Admin from './pages/admin';
 import Contact from './pages/contact';
+import Cart from './pages/cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import GlobalProvider from './store/globalProvider';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
+  <GlobalProvider>
     <BrowserRouter>
       <div className="App">
       
@@ -31,6 +34,7 @@ function App() {
           <Route path="/about" element={ <About />} />
           <Route path="/admin" element={ <Admin /> } />
           <Route path="/contact" element={ <Contact /> } />
+          <Route path="/cart" element={ <Cart /> } />
         </Routes>
 
           {/*create a footer and import it here*/}
@@ -38,6 +42,7 @@ function App() {
            
       </div>
     </BrowserRouter>
+  </GlobalProvider>
   );
 }
 

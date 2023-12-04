@@ -1,28 +1,19 @@
 //here goes import
 
 import "./navbar.css";
+import GlobalContext from "../store/globalContext";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 //here goes the logic
 
 function Navbar() {
+  const user = useContext(GlobalContext).user;
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary"
       data-bs-theme="dark"
     >
       <div className="container-fluid">
-        <Link className="navbar-brand" to="#"></Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -51,6 +42,15 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+          <li className="cart-b">
+            <button className="btn btn-dark" type="submit">
+              {user.name}
+            </button>
+            <Link className="nav-link active" to="/cart">
+              <i className="fa-solid fa-cart-shopping"></i>
+              Cart
+            </Link>
+          </li>
         </div>
       </div>
     </nav>

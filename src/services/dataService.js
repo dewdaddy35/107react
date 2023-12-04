@@ -3,21 +3,21 @@ let catalog =[
     {
         "title": "Running Shoes",
         "category":"Shoes",
-        "price":45.00,
+        "price":45.78,
         "image": "blackrunners.jpg",
         "_id": "1",//placeholder
     },
     {
         "title": "Basketball Shoes",
         "category":"Shoes",
-        "price":105.00,
+        "price":105.54,
         "image": "hightops.jpg",
         "_id": "2",//placeholder
     },
     {
         "title": "Kangol",
         "category":"Hats",
-        "price":55.00,
+        "price":55.73,
         "image": "kangol.jpg",
         "_id": "3",//placeholder
 
