@@ -1,5 +1,5 @@
 .navbar {
-  height: 200px;
+  height: 300px;
   padding: 200px;
   background-color: white;
   font-size: larger;
@@ -30,4 +30,7 @@
 
 .cart-b button {
   margin-right: 30px; /* Adjust the margin value as needed */
+}
+.nav-link {
+  border: solid white;
 }

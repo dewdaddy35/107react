@@ -33,7 +33,7 @@ function Contact() {
 
   return (
     <div className="form">
-      <h4 className="h4">Tell u show we are doing??</h4>
+      <h4 className="h4">Tell us how we are doing??</h4>
 
       <div>
         <label className="form-label">Name</label>

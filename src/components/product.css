@@ -21,16 +21,16 @@
 .product h5 {
   font-size: x-large;
   font-weight: bolder;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 5px;
   font-size: 16px;
 }
 
 .product button {
-  justify-content: right;
+  display: inline-flexbox;
   background-color: gold;
   color: black;
-  border-radius: 10%;
+  border-radius: 30%;
   padding: 8px;
   font-size: 9px;
   font: black;

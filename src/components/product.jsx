@@ -1,9 +1,11 @@
 //Product.js
 
 import "./product.css";
+
 import QuantityPicker from "../components/quantityPicker";
 import "../services/dataService";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import GlobalContext from "../store/globalContext";
 //create a useEffect function without the catalog
 //just console.log that say "hello i am a Product"
 function Product(props) {
@@ -11,12 +13,16 @@ function Product(props) {
   const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
   };
+
+  let addProductToCart = useContext(GlobalContext).addProductToCart;
+
   const total = (props.data.price * quantity).toFixed(2);
-  useEffect(function () {
-    console.log("hello i am a product");
-  }, []);
+  useEffect(function () {}, []);
   function addToCart() {
-    console.log(props.data.title);
+    let prod = { ...props.data };
+    prod.quantity = quantity;
+
+    addProductToCart(prod);
   }
   return (
     <div className="product">
@@ -29,12 +35,11 @@ function Product(props) {
         <label className="label">Total: ${total}</label>
       </div>
 
+      <QuantityPicker onQuantityChange={handleQuantityChange} />
       <button onClick={addToCart} className="product button">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i className="fa-solid fa-cart-shopping"></i>
         Add
       </button>
-
-      <QuantityPicker onQuantityChange={handleQuantityChange} />
     </div>
   );
 }

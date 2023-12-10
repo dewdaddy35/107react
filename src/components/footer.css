@@ -1,5 +1,5 @@
 .footer {
-  padding: 300px;
+  padding: 100px;
   font-size: larger;
   font-weight: bold;
   color: gold;
@@ -7,4 +7,5 @@
   background-image: url(/public/logo/hatfooter.jpg);
   background-size: cover;
   border: 4px solid gray;
+  text-align: inherit;
 }

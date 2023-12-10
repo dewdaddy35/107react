@@ -61,6 +61,7 @@ function Catalog() {
       </button>
       {categories.map((arrowCategories) => (
         <button
+          key={arrowCategories}
           onClick={() => filter(arrowCategories)}
           className="btn btn-sm btn-warning btn-filter"
         >

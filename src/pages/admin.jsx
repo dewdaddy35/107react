@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./admin.css";
-
 function Admin() {
   const initialProductState = {
     title: "",
@@ -8,6 +7,8 @@ function Admin() {
     image: "",
     price: "",
   };
+  const [allProducts, setAllProducts] = useState([]);
+  const [allCoupons, setAllCoupons] = useState([]);
   const initialCouponState = {
     code: "",
     discount: "",
@@ -39,12 +40,16 @@ function Admin() {
     setCoupon(copy);
   }
   function saveProduct() {
-    console.log("Saving product", product);
-    setProduct(initialProductState);
+    console.log(product);
+    let copy = [...allProducts];
+    copy.push(product);
+    setAllProducts(copy);
   }
   function saveCoupon() {
-    console.log("Saving coupon", coupon);
-    setCoupon(initialCouponState);
+    console.log(coupon);
+    let copy = [...allCoupons];
+    copy.push(coupon);
+    setAllCoupons(copy);
   }
 
   return (
@@ -105,15 +110,28 @@ function Admin() {
                 type="button"
                 className="btn btn-primary"
               >
+                <i className="fa-regular fa-floppy-disk mx-1"></i>
                 Save Product
               </button>
             </div>
+            {allProducts.map((prod) => (
+              <div key={prod.title} className="parent">
+                <img
+                  className="prod img"
+                  src={"/logo/" + prod.image}
+                  alt=""
+                ></img>
+                <label className="lbl-title">{prod.title}</label>
+                <label className="lbl-title">${prod.price}</label>
+              </div>
+            ))}
           </div>
         </section>
         <section className="coupons">
-          Coupons
-          <div>
-            <label className="field">Code</label>
+          <h3> Coupons</h3>
+
+          <div className="field">
+            <label className="form-label">Code</label>
             <input
               onChange={handleCouponForm}
               value={coupon.code}
@@ -122,8 +140,8 @@ function Admin() {
               className="form-control"
             />
           </div>
-          <div>
-            <label className="field">Discount</label>
+          <div className="field">
+            <label className="form-label">Discount</label>
             <input
               onChange={handleCouponForm}
               value={coupon.discount}
@@ -132,15 +150,23 @@ function Admin() {
               className="form-control"
             />
           </div>
-          <div>
+          <div className="field">
             <button
               onClick={saveCoupon}
               type="button"
               className="btn btn-primary"
             >
+              <i className="fa-regular fa-floppy-disk mx-1"></i>
               Save Coupon
             </button>
           </div>
+          {/*display code*/}
+          {allCoupons.map((cp) => (
+            <div key={cp.code} className="item">
+              <label>{cp.code}</label>
+              <label>{cp.discount}</label>
+            </div>
+          ))}
         </section>
       </div>
     </div>
