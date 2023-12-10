@@ -57,7 +57,7 @@ function Admin() {
       <h3>Store Administration</h3>
       <div className="parent">
         <section className="products">
-          <div className="form">
+          <div className="form-control">
             <h3>Register Products</h3>
           </div>
           <div>

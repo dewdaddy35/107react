@@ -31,7 +31,7 @@ function Cart() {
             <div class="prod-cart" key={prod.id}>
               <img src={"/logo/" + prod.image} alt=""></img>
 
-              <div className="cart div">
+              <div className="form-control mb-3">
                 <h5>{prod.title}</h5>
                 <p>{prod.category}</p>
               </div>
@@ -51,11 +51,11 @@ function Cart() {
           <div className="discount-form input-group mb-3">
             <input
               type="text"
-              className="form-control"
+              className="form-control form-control-sm"
               placeholder="Discount Code"
             />
             <button
-              className="btn btn-outline-primary"
+              className="btn btn-outline-primary btn=sm"
               type="button"
               id="button-addon2"
             >
