@@ -8,10 +8,10 @@ function Home() {
 
       <div>
         <h3>Fall New Gear coming soon</h3>
-        <img className="img" src="../logo/sweater.jpg" alt="" />
-        <img className="img" src="../logo/heavy coat.jpg" alt="" />
-        <img className="img" src="../logo/sweat suit1.jpg" alt="" />
-        <img className="img" src="../logo/sweat suit2.jpg" alt="" />
+        <img className="img-home" src="../logo/sweater.jpg" alt="" />
+        <img className="img-home" src="../logo/heavy coat.jpg" alt="" />
+        <img className="img-home" src="../logo/sweat suit1.jpg" alt="" />
+        <img className="img-home" src="../logo/sweat suit2.jpg" alt="" />
       </div>
     </div>
   );

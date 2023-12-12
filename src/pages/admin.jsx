@@ -115,7 +115,7 @@ function Admin() {
               </button>
             </div>
             {allProducts.map((prod) => (
-              <div key={prod.title} className="parent">
+              <div key={prod.title} className="parent-p">
                 <img
                   className="prod img"
                   src={"/logo/" + prod.image}

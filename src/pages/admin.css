@@ -1,12 +1,47 @@
 .admin {
   color: black;
-  background-color: white;
+  background-color: gold;
   border: 1px solid gray;
 }
 .parent {
   display: flex;
   justify-content: space-evenly;
+  font-size: larger;
+  border: 1px;
+}
+.parent-p {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 10px;
+  margin: 12px 12px;
+  height: 75px;
+  justify-content: space-between;
+  font-weight: bold;
+  /* display: flex;
+  flex: 4;
+  
+  align-items: center;
+  border: 1px solid;
+  padding: 1px;
+  margin: 12px 12px;
   font-size: xx-large;
+  max-width: 300px; 
+  border: 1px solid gray; 
+  height: auto;*/
+}
+.img {
+  width: 6%;
+  height: auto;
+  margin-bottom: 10px;
+
+  padding-top: 5px;
+
+  /*display: flex;
+  max-width: 300px;
+  border: 1px solid gray; 
+  height: auto;
+  justify-content: space-evenly;*/
 }
 .products {
   flex: 3;
@@ -29,5 +64,19 @@
   border: 3px solid gray;
 }
 .item {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 10px;
+  margin: 12px 12px;
+  height: 50px;
+  justify-content: space-between;
+  font-weight: bold;
   justify-content: space-evenly;
+}
+.form-label {
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
 }

@@ -38,7 +38,6 @@ function Product(props) {
       <QuantityPicker onQuantityChange={handleQuantityChange} />
       <button onClick={addToCart} className="product button">
         <i className="fa-solid fa-cart-shopping"></i>
-        Add
       </button>
     </div>
   );

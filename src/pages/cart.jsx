@@ -28,20 +28,21 @@ function Cart() {
       <div className="parent">
         <div className="prods">
           {cart.map((prod) => (
-            <div class="prod-cart" key={prod.id}>
+            <div class="prod-cart form-control-md" key={prod.id}>
               <img src={"/logo/" + prod.image} alt=""></img>
 
-              <div className="form-control mb-3">
+              <div className="form-control-lg">
                 <h5>{prod.title}</h5>
-                <p>{prod.category}</p>
+                <h7>{prod.category}</h7>
               </div>
 
-              <label>{prod.price.toFixed(2)}</label>
-              <label>{prod.quantity}</label>
+              <label className="label">{prod.price.toFixed(2)}</label>
+              <label className="label">{prod.quantity}</label>
               <label className="total">
                 {(prod.price * prod.quantity).toFixed(2)}
               </label>
-              <button className="btn btn-sm btn-outline-danger">Delete</button>
+
+              <button className="btn btn-sm btn-outline-danger">Remove</button>
             </div>
           ))}
         </div>
@@ -55,14 +56,16 @@ function Cart() {
               placeholder="Discount Code"
             />
             <button
-              className="btn btn-outline-primary btn=sm"
+              className="btn btn-outline-warning btn=sm"
               type="button"
               id="button-addon2"
             >
               Apply
             </button>
           </div>
-          <button className="btn btn-outline-primary mt-2">Submit Order</button>
+          <div className="d-grid gap-2 col-3 mx-auto">
+            <button className="btn btn-secondary mt-2">Submit Order</button>
+          </div>
         </div>
       </div>
     </div>
