@@ -1,5 +1,6 @@
 .cart {
   padding-top: 10px;
+  background-color: gold;
 }
 .cart h1 {
   text-align: center;
@@ -20,6 +21,7 @@
   border: 1px solid;
   padding: 10px;
   margin: 12px 12px;
+  font-weight: bold;
 }
 .cart .prod-cart div {
   flex: 4;

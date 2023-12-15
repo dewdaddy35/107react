@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./admin.css";
+import DataService from "../services/dataService";
 function Admin() {
   const initialProductState = {
     title: "",
@@ -13,6 +14,16 @@ function Admin() {
     code: "",
     discount: "",
   };
+
+  useEffect(function () {
+    loadAllProducts();
+  }, []);
+
+  async function loadAllProducts() {
+    let service = new DataService();
+    let prods = await service.getProducts();
+    setAllProducts(prods);
+  }
 
   const [product, setProduct] = useState(initialProductState);
   const [coupon, setCoupon] = useState(initialCouponState);
@@ -44,6 +55,12 @@ function Admin() {
     let copy = [...allProducts];
     copy.push(product);
     setAllProducts(copy);
+
+    //send to server
+    let fixedProduct = { ...product };
+    fixedProduct.price = parseFloat(product.price);
+    let service = new DataService();
+    service.saveProduct(fixedProduct);
   }
   function saveCoupon() {
     console.log(coupon);
@@ -57,7 +74,7 @@ function Admin() {
       <h3>Store Administration</h3>
       <div className="parent">
         <section className="products">
-          <div className="form-control">
+          <div className="form-control admin">
             <h3>Register Products</h3>
           </div>
           <div>
@@ -68,7 +85,7 @@ function Admin() {
                 value={product.title}
                 name="title"
                 type="text"
-                className="form-control"
+                className="form-control add"
               />
             </div>
 
@@ -79,7 +96,7 @@ function Admin() {
                 value={product.category}
                 name="category"
                 type="text"
-                className="form-control"
+                className="form-control add"
               />
             </div>
             <div className="field">
@@ -89,7 +106,7 @@ function Admin() {
                 value={product.image}
                 name="image"
                 type="text"
-                className="form-control"
+                className="form-control add"
               />
             </div>
 
@@ -100,7 +117,7 @@ function Admin() {
                 value={product.price}
                 name="price"
                 type="text"
-                className="form-control"
+                className="form-control add"
               />
             </div>
 
@@ -137,7 +154,7 @@ function Admin() {
               value={coupon.code}
               name="code"
               type="text"
-              className="form-control"
+              className="form-control add"
             />
           </div>
           <div className="field">
@@ -147,7 +164,7 @@ function Admin() {
               value={coupon.discount}
               name="discount"
               type="email"
-              className="form-control"
+              className="form-control add"
             />
           </div>
           <div className="field">

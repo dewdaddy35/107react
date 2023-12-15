@@ -41,7 +41,7 @@ function Contact() {
           onChange={handleChange}
           value={name}
           type="text"
-          className="form-control"
+          className="form-control control"
         />
       </div>
 
@@ -51,7 +51,7 @@ function Contact() {
           onChange={handleEmail}
           value={email}
           type="email"
-          className="form-control"
+          className="form-control control"
         />
       </div>
 
@@ -61,7 +61,7 @@ function Contact() {
           onChange={handleMessage}
           value={message}
           rows="3"
-          className="form-control"
+          className="form-control control"
         ></textarea>
       </div>
 

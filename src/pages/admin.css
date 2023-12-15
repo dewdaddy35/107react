@@ -1,16 +1,18 @@
 .admin {
-  color: black;
-  background-color: gold;
   border: 1px solid gray;
+  background-color: black;
+  color: gold;
 }
 .parent {
   display: flex;
   justify-content: space-evenly;
   font-size: larger;
+
   border: 1px;
 }
 .parent-p {
   display: flex;
+  color: gold;
   align-items: center;
   border: 1px solid;
   padding: 10px;
@@ -45,6 +47,7 @@
 }
 .products {
   flex: 3;
+  color: black;
   min-height: 100px;
 }
 .coupons {
@@ -52,7 +55,8 @@
   min-height: 100px;
 }
 .admin section {
-  border: 3px solid gray;
+  color: black;
+  border: 2px solid gray;
   border-radius: 6px;
 }
 .admin .btn {
@@ -60,11 +64,13 @@
   background-color: gold;
   border: 3px solid gray;
 }
-.form-control {
-  border: 3px solid gray;
+.add {
+  border: 2px solid gray;
+  background-color: gold;
 }
 .item {
   display: flex;
+  color: gold;
   align-items: center;
   border: 1px solid;
   padding: 10px;
@@ -76,7 +82,11 @@
 }
 .form-label {
   color: black;
+  align-items: center;
   font-size: x-large;
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
+}
+.field {
+  color: black;
 }

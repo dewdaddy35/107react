@@ -1,9 +1,11 @@
+import axios from 'axios';
+
 //create a dictionary with 3 categories
 let catalog =[
     {
         "title": "Running Shoes",
         "category":"Shoes",
-        "price":45.78,
+        "price":45.99,
         "image": "blackrunners.jpg",
         "_id": "1",//placeholder
     },
@@ -66,10 +68,19 @@ let catalog =[
 ];
 class DataService {
    
-    getProducts(){
+    async getProducts(){
         //retrieve the product to display
-        return catalog;
+
+        // calling the server
+     let response = await axios.get("http://127.0.0.1:5000/api/product");
+    return response.data;
+}
+
+    async saveProduct(prod){
+    let response =  await axios.post("http://127.0.0.1:5000/api/product", prod);
+    return response.data;
     }
+
 }
 
 export default DataService;
